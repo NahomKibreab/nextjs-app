@@ -1,4 +1,4 @@
-export default function Home() {
+export default function Playlist({ params }) {
   return (
     <div
       style={{
@@ -9,7 +9,7 @@ export default function Home() {
         fontSize: "2rem",
       }}
     >
-      <h1>Welcome to Next.JS</h1>
+      <h2>{params.playlist}</h2>
     </div>
   );
 }
